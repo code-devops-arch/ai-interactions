@@ -1,0 +1,10 @@
+openai
+elasticsearch
+chromadb
+sentence-transformers
+pypdf
+numpy
+scikit-learn
+torch
+kubernetes
+python-dotenv
