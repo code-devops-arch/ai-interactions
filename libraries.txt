@@ -8,3 +8,10 @@ scikit-learn
 torch
 kubernetes
 python-dotenv
+langchain
+langchain-openai 
+langchain-community
+langchain-core
+langchain-huggingface
+huggingface_hub
+sequential

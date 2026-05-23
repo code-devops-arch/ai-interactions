@@ -1,14 +1,10 @@
 from concurrent.futures import thread
-import json
-import os
+import json 
  
 from dotenv import load_dotenv
 from openai import OpenAI
-
-load_dotenv()
-openAIKey = os.getenv("openAIKey")
-
-print("OpenAI Key loaded successfully:", openAIKey)
+from aiconfig import Config
+config = Config()
 
 # Store temperatures for cities in a dictionary.
 CITY_TEMPERATURES = {
@@ -30,7 +26,7 @@ def getTemperature(city: str):
 def ask_chatgpt_for_city_temperature(SYSTEM_PROMPT: str, USER_PROMPT: str = None):
     """Send a prompt to ChatGPT and let it call getTemperature to retrieve the temperature."""
  
-    openai = OpenAI(api_key=openAIKey)  
+    openai = OpenAI(api_key=config.get_openAIKey())  
     tools = [
         {
             "tool_call_id": "d8cdd56d-98e1-4dea-ae3a-2b23",

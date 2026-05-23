@@ -1,2 +1,3 @@
 **/bin/**
 **/aiconfig.py**
+./src/ai/agent/__pycache__/**
