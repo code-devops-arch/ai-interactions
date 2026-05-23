@@ -1,3 +1,6 @@
 **/bin/**
 **/aiconfig.py**
 ./src/ai/agent/__pycache__/**
+./ai/**
+./src/ai/agent/__pycache__/**
+./src/ai/agent/__pycache__/aiconfig.cpython-314.pyc
